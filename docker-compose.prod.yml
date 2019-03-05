@@ -1,0 +1,19 @@
+version: '3'
+services:
+    posts:
+        build:
+            context: posts-service
+            dockerfile: prod.Dockerfile
+        image: posts-service
+        restart: on-failure
+        ports:
+            - 3000:3000
+    
+    users:
+        build:
+            context: users-service
+            dockerfile: prod.Dockerfile
+        image: users-service
+        restart: on-failure
+        ports:
+            - 3001:3000
