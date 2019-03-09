@@ -1,8 +1,6 @@
-FROM node:alpine
+FROM muntianrazvan/mocha:latest
 
 WORKDIR /app
-
-RUN npm install -g mocha
 
 ADD package.json package-lock.json ./
 ADD ./src ./
