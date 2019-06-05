@@ -1,4 +1,4 @@
-FROM muntianrazvan/nodemon:latest
+FROM fiveem/nodemon:latest
 
 WORKDIR /app
 

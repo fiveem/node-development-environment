@@ -1,4 +1,4 @@
-FROM muntianrazvan/mocha:latest
+FROM fiveem/mocha:latest
 
 WORKDIR /app
 
